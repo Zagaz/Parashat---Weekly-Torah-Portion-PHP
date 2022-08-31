@@ -14,6 +14,8 @@ require 'parashat.php';
 <?php
 $myTempDate = DateTime::createFromFormat('Y-m-d', $parashat_date);
 $formatParashatDate = $myTempDate->format('m/d/Y');
+
+
 ?>
   <h2><?php echo $formatParashatDate;  ?></h2>
   <h1>This week's parashat: <?php echo $parashat_title; ?></h1>
