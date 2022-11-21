@@ -9,19 +9,40 @@ The parashah is a section of the Torah (Five Books of Moses) used in Jewish litu
 ## Install
 
 Just place `parashat.php` on a folder of your choice.
-On the page you want the the data, use: require 'parashat.php';
+On the page you want the the data, use:
+` require 'parashat.php' ; `;
 
-You will have the `$parashat_array`, see the example bellow:
+You will have 5 variables:
+```
+    $parashat_title => Shoftim
+    $parashat_date => 2022-09-03
+    $parashat_hebrew => פרשת שופטים
+    $parashat_torah => Devarim/Deuteronômio
+    $haftorah => Isaiah 51:12-52:12
 
-Array
 ```
-(
-    [parashat_title] => Shoftim
-    [parashat_date] => 2022-09-03
-    [parashat_hebrew] => פרשת שופטים
-    [parashat_torah] => Devarim/Deuteronômio
-    [haftorah] => Isaiah 51:12-52:12
-)
+
+You you got to do is echo these variables wherever you need eg.:
 ```
+<p>This week's parashat: <?php echo $parashat_title; ?></p>
+ <p>Hebrew name: <?php echo $parashat_hebrew; ?></p>
+ <p>Torah book: <?php echo $parashat_torah; ?></p>
+ <p><?php echo $haftorah; ?></p>
+ 
+```
+The result is:**
+
+**This week's parashat: Shoftim**
+
+**Hebrew name: פרשת שופטים**
+
+**Torah book: Devarim/Deuteronomy**
+
+**Haftara: Isaiah 51:12-52:12**
+
+
+
+## Translations
+The Torah Book names can be easily changed, 
 
 
