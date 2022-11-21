@@ -1,4 +1,4 @@
-# Week's Parashat
+# Weekly Parashat (Torah Portion)
 A simple way to have an array with information about this week Torah portion on your application in PHP.
 
 ## Intro
